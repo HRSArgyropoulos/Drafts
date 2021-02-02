@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*SIDE-MENU*/
+nav ul {
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    align-items: baseline;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li {
+    line-height: 0.9em;
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+nav {
+    height: 100%;
+    width: 100px;
+    background-color: aquamarine;   
+}
+
+#display {
+    width: 100%;
+}
+
+#grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "col1 col2 col3";
+}
+
+@media screen and (max-width: 768px) {
+    #grid {
+        grid-template-areas:
+            "col1"
+            "col2"
+            "col3";
+    }
+}
+
+.active {
+    animation: bigger ease 0.5s;
+    font-size: 6em;
+}
+
+.active a {
+    color: white;
+}
+
+@keyframes bigger {
+    from {font-size: 1.6rem;}
+    to {font-size: 6em;}
+}
+
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#col1 {
+    background-image: url("../img/1.jpg");
+    grid-area: col1;
+}
+
+#col2 {
+    background-image: url("../img/2.jpg");
+    grid-area: col2;
+}
+
+#col3 {
+    background-image: url("../img/3.jpg");
+    grid-area: col3;
+}
+
+.img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255, 0.75);
+    backdrop-filter: saturate(180%) blur(15px);
+    text-align: center;
+    padding: 20px 0;
+    border: 4px solid black;
+}
+
+.cat-menu {
+    display: none;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.cat-menu > li {
+    padding: 0.2rem 0;
+}
+
+.overlay:hover .cat-menu{
+    display: block;
+    animation: popup ease-in 0.5s;
+}
+
+.overlay:hover .cat-menu li:hover {
+    text-decoration: 4px underline aquamarine;
+}
+
+.overlay:hover h2 {
+    text-decoration: underline;
+}
+
+@keyframes popup {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

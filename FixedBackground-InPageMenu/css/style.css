@@ -1,0 +1,110 @@
+:root {
+    --green: #00ffb9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#background {
+    background: url("../img/amst.jpg") repeat fixed 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+#content {
+    padding: 15% 0;
+    color: white;
+    font-size: 5rem;
+}
+
+.dot {
+    color: var(--green);
+    position: fixed;
+    z-index: 2;
+}
+
+#dest-content {
+    width: 90vw;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+.dest-menu {
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+    position: relative;
+}
+
+.dest-menu li{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.menu-content{
+    padding-top: 50px;
+    background-color: white;
+}
+
+.menu-content p {
+    padding-bottom: 2rem;
+}
+
+.menu-content img {
+    height: 400px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/*BREADCRUMBS */
+ul.breadcrumbs {
+    background-color: rgb(219, 219, 219);
+    padding: 0.5em;
+    padding-left: 2rem;
+}
+
+ul.breadcrumbs li {
+    display: inline;
+}
+
+ul.breadcrumbs li+li:before {
+    padding: 5px;
+    content: "/\00a0";
+}
+
+ul.breadcrumbs li a {
+    color: black;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.active {
+    color: var(--green);
+}
