@@ -1,0 +1,153 @@
+/*General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(253, 246, 231);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* background-color: linear rgb(40, 40, 136); BLUE */
+    background: linear-gradient(220deg, rgba(255, 0, 0, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(40,40,136,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(17, 0, 255, 0.8), rgba(0,0,255,0) 70.71%);
+    clip-path: circle(100% at 50% 0%);
+}
+
+/*Header-Main section*/
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+}
+
+/*lEFT CONTENT*/
+
+h1 {
+    color: white;
+    font-size: 5em;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+}
+
+#hdr-cont {
+    padding-top: 20vh;
+    flex: 1;
+    z-index: 2;
+}
+
+#bop {
+    animation: bop 2.5s ease-in-out;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+    width: 100px;
+    height: 4px;
+    border-radius: 10px;
+    margin: 5px 0 0;
+    animation: underline ease 1s 2s forwards;
+    opacity: 0;
+    background-color: white;
+}
+
+
+/*RIGHT CONTENT*/
+
+#hdr-img {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+#hdr-img img {
+    position: absolute;
+    right: 5rem;
+    top: 50px;
+}
+
+/*BUTTON*/
+
+a {
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    display: block;
+    padding: 1.2rem 2rem;
+}
+
+button {
+    font-size: 1.3rem;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    button {
+        font-size: 1.1rem;
+    }
+}
+
+/*ANIMATIONS*/
+
+@keyframes underline {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes bop {
+    0% {
+        font-size: 100%;
+    }
+    50% {
+        font-size: 150%;
+    }
+    100% {
+        font-size: 100%;
+    }
+}
+
+/*ARTISTS Grid*/
+
+#artists-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    grid-template-rows: 1fr;
+}
+
+#artists-grid img{
+    width: 100%;
+}
