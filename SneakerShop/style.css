@@ -1,0 +1,173 @@
+:root {
+    --grey235:rgb(235, 235, 235);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2000px;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul li {
+    display: inline;
+}
+
+/* Material Icons*/
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* SIDEBAR */
+
+#sidebar{
+    /* background-color: var(--grey235); */
+    width: 5vw;
+}
+
+#sidebar ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar ul li{
+    padding: 0.5rem 0;
+}
+
+.active-product {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* MAIN-CONTAINER */
+
+#main-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#products {
+    width: 95vw;
+}
+
+/* TEMPLATE AREAS */
+.main-product-img {
+    grid-area: main;
+}
+
+.side-product-img1{
+    grid-area: side1;
+}
+
+.side-product-img2 {
+    grid-area: side2;
+}
+
+.side-product-img3 {
+    grid-area: side3;
+}
+
+.product-info {
+    grid-area: info;
+}
+
+.product {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 8px;
+    grid-template-areas:
+    "main side1 info"
+    "main side2 info"
+    "main side3 info";
+}
+
+@media (max-width:1000px) {
+    .product {
+        grid-template-columns: repeat(3,1fr) 2fr;
+        grid-template-areas:
+        "main main main info"
+        "main main main info"
+        "side1 side2 side3 info";
+    }
+}
+
+@media (max-width:768px) {
+    .product {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+        "main main main"
+        "main main main"
+        "side1 side2 side3"
+        "info info info";
+    }
+}
+
+.product > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-product-img{
+    background-image: url(img/sneaker001-orange.jpg);
+}
+
+.side-product-img1{
+    background-image: url(img/sneaker001-side1.jfif);
+}
+
+.side-product-img2{
+    background-image: url(img/sneaker001-side2.jfif);
+}
+
+.side-product-img3{
+    background-image: url(img/sneaker001-side3.jfif);
+}
+
+.prod-info-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .prod-info-container {
+        width: 100%;
+    }
+}
