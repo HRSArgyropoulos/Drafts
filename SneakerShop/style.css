@@ -12,6 +12,7 @@ body {
     max-width: 2000px;
     font-family: 'Didact Gothic', sans-serif;
     padding: 0 1rem;
+    margin: 0 auto;
 }
 
 h1 {
@@ -35,6 +36,18 @@ header {
 
 header ul li {
     display: inline;
+}
+
+button {
+    font-family: 'Didact Gothic', sans-serif;
+    border-radius: 50px;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--grey235);
+    cursor: pointer;
+    margin: 3rem 0;
 }
 
 /* Material Icons*/
@@ -103,6 +116,9 @@ header ul li {
 
 .product-info {
     grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .product {
@@ -145,20 +161,48 @@ header ul li {
     background-position: center;
 }
 
-.main-product-img{
+/* PRODUCT001 */
+
+#prod001 .main-product-img{
     background-image: url(img/sneaker001-orange.jpg);
 }
 
-.side-product-img1{
+#prod001 .side-product-img1{
     background-image: url(img/sneaker001-side1.jfif);
 }
 
-.side-product-img2{
+#prod001 .side-product-img2{
     background-image: url(img/sneaker001-side2.jfif);
 }
 
-.side-product-img3{
+#prod001 .side-product-img3{
     background-image: url(img/sneaker001-side3.jfif);
+}
+
+#prod001 button:hover {
+    background-color: orange;
+}
+
+/* PRODUCT 002 */
+
+#prod002 .main-product-img{
+    background-image: url(img/prod002/prod002-main.jpg);
+}
+
+#prod002 .side-product-img1{
+    background-image: url(img/prod002/prod002-side1.jpg);
+}
+
+#prod002 .side-product-img2{
+    background-image: url(img/prod002/prod002-side2.jpg);
+}
+
+#prod002 .side-product-img3{
+    background-image: url(img/prod002/prod002-side3.jpg);
+}
+
+#prod002 button:hover {
+    background-color: rgb(255, 46, 46);
 }
 
 .prod-info-container {
@@ -170,4 +214,29 @@ header ul li {
     .prod-info-container {
         width: 100%;
     }
+}
+
+/* SPACING INFO */
+.prod-main-title{
+    margin-top: 1rem;
+}
+
+.prod-price {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+}
+
+/* DROPDOWNS INFO*/
+
+.dropdowns li{
+    border-bottom: 1px solid rgb(54, 54, 54);
+    padding: 0.5rem;
+}
+
+/* LINE BEFORE TITLE */
+.prod-main-title::before {
+    content: "";
+    width: 5px;
+    height: 100px;
+    background-color: rgb(253, 0, 0);
 }
