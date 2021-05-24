@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelExotic</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+</head>
+<body>
+    <nav class="sticky-nav">
+        <div class="top-nav page-limits">
+            <h1><a href="#">HotelExotic</a></h1>
+            <div class="navbar">
+                <ul class="fl-cnt">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><button><a href="#">Contact Us</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider main container -->
+    <div class="swiper-container main-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/mainSlider/slide3.jpg">
+                <h2 class="slider-text first-slide">It's your time <br> to relax.</h2>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/mainSlider/slide1.jpg">
+                <h3 class="slider-text">Exotic, luxury, indoor lobbies and lounges</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/mainSlider/slide2.jpg">
+                <h3 class="slider-text">Outdoor swimming pools for kids and adults</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/mainSlider/slide4.jpg">
+                <h3 class="slider-text">Outdoor swimming pools for kids and adults</h3>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <img class='svg arrow-down'src="img/icons/arrow-down.svg" alt="Arrow Down"/>
+    <div class="booking-container">
+        <h2>Book your stay</h2>
+        <form action="" class="booking">
+
+            <label for="location">Hotel Location</label>
+            <select name="location" id="location">
+                <option value="maldives">Maldives, Maldives</option>
+                <option value="bora-bora">Bora Bora, Tahiti</option>
+                <option value="st-bars">St. Barts, The Caribbean</option>
+                <option value="maldives">Kaua'i, Hawaii</option>
+            </select>
+
+            <label for="arriving">Arriving</label>
+            <input type="date" name="arriving" id="arriving">
+
+            <label for="arriving">Leaving</label>
+            <input type="date" name="arriving" id="arriving">
+
+            <label for="location">Type of room</label>
+            <select name="rooms" id="rooms">
+                <option value="1">Double Room</option>
+                <option value="2">Executive Room</option>
+                <option value="3">Small Suite</option>
+                <option value="4">VIP Suite</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+</body>
+</html>

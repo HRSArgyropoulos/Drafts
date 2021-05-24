@@ -1,0 +1,11 @@
+.top-nav {
+    color: white;
+    text-rendering: optimizeLegibility;
+    font-weight: 200;
+}
+.top-nav button a{
+    background-color: black;
+}
+.top-nav h1 {
+    font-weight: 400;
+}
