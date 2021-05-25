@@ -135,7 +135,7 @@ form input,form select {
 }
 @media (max-width:1200px) {
     .slider-text {
-        top: 25%!important;
+        top: 20%!important;
     }
     .booking-container {
         top: 65%;
@@ -159,6 +159,9 @@ form input,form select {
     }
     .booking-container h2{
         font-size: 1.2rem;
+    }
+    .top-nav {
+        padding: 0.6rem 0;
     }
 }
 
