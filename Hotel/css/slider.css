@@ -47,3 +47,17 @@
     background-color: var(--lavender-web);
 }
 
+@media (max-width:768px) {
+    .slider-text {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    .main-slider h2{
+        font-size: 2.5rem;
+    }
+    .main-slider h3 {
+        font-size: 1.4rem;
+    }
+}
+

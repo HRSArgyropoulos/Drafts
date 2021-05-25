@@ -102,7 +102,8 @@ button:hover {
 
 /* BOOK FORM */
 .booking-container {
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
@@ -149,5 +150,23 @@ form input,form select {
     }
     .main-slider h2 {
         font-size: 2rem;
+    }
+    .slider-text {
+        left: 50%;
+    }
+    * {
+        font-size: 1.01rem;
+    }
+    .booking-container h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:450px) {
+    .navbar {
+        display: none;
+    }
+    .top-nav h1{
+        margin: 0 auto;
     }
 }
