@@ -81,7 +81,7 @@ button:hover {
 
 .arrow-down {
     position: absolute;
-    bottom: 50px;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -90,13 +90,13 @@ button:hover {
 
 @keyframes up-down {
     0% {
-        bottom: 50px;
+        bottom: 3%;
     }
     25% {
-        bottom: 20px
+        bottom: 0%;
     }
     100% {
-        bottom: 50px
+        bottom: 3%;
     }
 }
 
@@ -145,7 +145,7 @@ form input,form select {
 @media (max-width:768px) {
     .booking-container {
         right: 50%;
-        top: 45%;
+        top: 40%;
         transform: translateX(50%);
     }
     .main-slider h2 {
