@@ -1,5 +1,5 @@
 /* Initialize new swiper slider */
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.main-slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -12,9 +12,27 @@ const swiper = new Swiper('.swiper-container', {
       delay: 10000,
       disableOnInteraction: false,
     },
-    navigation: false,
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    }
+    navigation: false
 });
+
+/* Hotels slider */
+
+const roomsSwiper = new Swiper('.sections-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 50,
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+/* modification for buttons */

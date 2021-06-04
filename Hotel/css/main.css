@@ -73,6 +73,27 @@ button:hover {
     transition: 0.25s ease-in-out;
 }
 
+/* HEADINGS */
+.heading {
+    position: relative;
+    font-size: 2.5rem;
+    margin-left: 1.2rem;
+}
+
+.heading::before {
+    content: "";
+    width: 5px;
+    height: 90%;
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--periwinkle-crayola);
+}
+
+
 /* ARROW SVG */
 .svg {
     max-width: 60px;
@@ -105,7 +126,7 @@ button:hover {
     width: 90%;
     max-width: 500px;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -113,6 +134,7 @@ button:hover {
     z-index: 2;
     color: white;
     padding: 1.8rem;
+    backdrop-filter: blur(10px);
 }
 .booking {
     display: flex;
@@ -171,5 +193,95 @@ form input,form select {
     }
     .top-nav h1{
         margin: 0 auto;
+    }
+}
+
+/* SECTIONS */
+.sections {
+    padding:100px 0;
+    z-index: 0;
+    position: relative;
+}
+
+.backgr-img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    max-width: 300px;
+}
+
+.sections-swiper {
+    width: 100%;
+    margin: 3rem 0;
+    z-index: 0;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+/* ROOMS */
+#rooms {
+    background-color: var(--mint-cream);
+}
+
+.rooms-details h3{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.room-description {
+    margin: 3rem 0;
+}
+
+.room-slides img{
+    display: block;
+    width: 65%;
+    object-fit: cover;
+}
+
+.rooms-details {
+    background-color: rgb(253, 243, 226);
+    padding: 1rem 3rem;
+    width: 35%;
+}
+
+.rooms-details .amenities {
+    display: flex;
+}
+
+.amenities {
+    margin: 2rem 0;
+}
+
+.amenities i{
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.amenities .inactive {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:900px) {
+    .swiper-slide {
+        flex-direction: column;
+    }
+    .swiper-slide > img, .swiper-slide > * {
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    .amenities {
+        justify-content: center;
+    }
+    .backgr-img {
+        width: 40%;
+    }
+    .sections {
+        padding: 75px 0;
     }
 }

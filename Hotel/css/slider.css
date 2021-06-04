@@ -1,4 +1,8 @@
-.swiper-slide img{
+:root {
+    --swiper-navigation-size: 30px;
+}
+
+.main-slider img{
     display: block;
     width: 100%;
     height: 100%;
@@ -6,25 +10,18 @@
     object-position: center;
     z-index: 1;
 }
-.swiper-container{
+.main-slider{
     height: 100vh;
     position: relative;
 }
-.swiper-pagination-progressbar {
-    top: initial!important;
-    bottom: 0;
-}
-.swiper-pagination-progressbar-fill {
-    background: rgb(255, 255, 255)!important;
-}
-.slider-text {
+.main-slider .slider-text {
     position: absolute;
     z-index: 2;
     color: white;
     left: 10%;
     top: 85%;
 }
-.first-slide{
+.main-slider .first-slide{
     top: 50%;
     transform: translateY(-50%);
 }
@@ -34,7 +31,7 @@
 .main-slider h3 {
     font-size: 2rem;
 }
-.slider-text::before {
+.main-slider .slider-text::before {
     content: "";
     width: 4px;
     height: 90%;
@@ -48,7 +45,7 @@
 }
 
 @media (max-width:768px) {
-    .slider-text {
+    .main-slider .slider-text {
         left: 50%;
         transform: translateX(-50%);
         width: 80%;
@@ -61,6 +58,9 @@
     }
 }
 
-.swiper-button-prev,.swiper-button-next {
-    display: none;
+/* BUTTONS */
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+    background-color: black;
+    padding: 1.2rem 1rem;
 }
