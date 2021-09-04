@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ελληνικά Ταχυδρομεία - ΕΛΤΑ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/img-gallery-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lft-side">
+            <nav>
+                <a href="#"><img id="logo" src="images/Hellenic_Post.svg.png"></a>
+                <ul>
+                    <li><a href="#">Αρχική</a></li>
+                    <li><a href="#">Η Εταιρία</a></li>
+                    <li><a href="#">Σημεία Ταχ. Εξυπηρέτησης</a></li>
+                    <li><a href="#">Ηλεκτρική Ενέργεια</a></li>
+                </ul>
+            </nav>
+            <section id="gallery">
+                <div class="tabs" id="personal">
+                    <h2><a href="">Ιδιώτες</a></h2>
+                </div>
+                <div class="tabs" id="bussiness">
+                    <h2><a href="">Επιχειρήσεις</a></h2>
+                </div>
+                <div id="gallery-1" class="gallery-content"></div>
+                <!-- <h3>ΕΛΤΑ</h3>
+                    <p>Οι αποστολές σας προς το εξωτερικό και το εσωτερικό</p>
+                    <p>τώρα πιο εύκολα και γρήγορα απο ποτέ!</p> -->
+                <!-- </div> -->
+            </section>
+        </div>
+        <div class="rgt-side">
+            <section id="top-menu">
+                <ul>
+                    <li><a href="#"><i class="far fa-user"></i>Εγγραφή</a></li>
+                    <li><a href="#"><i class="fas fa-sign-in-alt"></i>Είσοδος</a></li>
+                    <li><a href="#"><i class="fas fa-sign-in-alt"></i>Είσοδος με eIDAS</a></li>
+                </ul>
+            </section>
+            <form id="tracking-form">
+                <label for="trck-number">
+                    <h4>Κωδικός Αντικειμένου:</h4>
+                </label>
+                <input type="text" name="trck-number" id="trck-number" placeholder="PP123456785GR" />
+                <button type="submit">></button>
+            </form>
+            <section id="side-menu">
+                <div class="tabs">
+                    <h2><a href="">θέλω να...</a></h2>
+                </div>
+                <ul>
+                    <li><a href="#">Υπολογίσω Κόστος</a></li>
+                    <li><a href="#">Βρω Ταχ. Κώδικα</a></li>
+                    <li><a href="#">Βρω Σημείο Ταχ.
+                            Εξυπηρέτησης</a></li>
+                    <li><a href="#">Αγοράσω Ψηφιακό
+                            Γραμματόσημο</a></li>
+                    <li><a href="#">Αγοράσω Ψηφιακό
+                            Γραμματόσημο</a></li>
+                    <li><a href="#">Εντοπίσω Αντικείμενο</a></li>
+                </ul>
+            </section>
+            <section id="eshop">
+                <a href="#">
+                    <h2>e-shop</h2>
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </section>
+            <section id="contact">
+                <h2>Εξυπηρέτηση Πελατών</h2>
+                <div class="cnt-tel">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>800 11 82 000</span>
+                </div>
+                <div class="cnt-tel">
+                    <i class="fas fa-mobile"></i>
+                    <span>212 0000 800</span>
+                </div>
+            </section>
+            <form id="search">
+                <label for="search-form">
+                    <h4>Αναζήτηση Περιεχομένων</h4>
+                </label>
+                <input type="text" name="src-txt" id="src-txt" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <section class="categories">
+        <ul>
+            <li>
+                <div class="ctg-header" id="mail">
+                    <h3>Αλληλογραφία & Δέματα</h3>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <ul class="ctg-links">
+                    <li><a href="#">Αλληλογραφία & Δέματα</a></li>
+                    <li><a href="#">Εκτελωνισμός</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-circle-right"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="ctg-header" id="economy">
+                    <h3>Χρηματοοικονομικά</h3>
+                    <i class="fas fa-euro-sign"></i>
+                </div>
+                <ul class="ctg-links">
+                    <li><a href="#">Λογαριασμός GIRO</a></li>
+                    <li><a href="#">Μεταφορές Κεφαλαίων</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-circle-right"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="ctg-header" id="products">
+                    <h3>Προιόντα Λιανικής</h3>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <ul class="ctg-links">
+                    <li><a href="#">Προιόντα Prepaid</a></li>
+                    <li><a href="#">Ταχυδρομική Θυρίδα</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-circle-right"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="ctg-header" id="collection">
+                    <h3>Post Collection</h3>
+                    <i class="fas fa-stamp"></i>
+                </div>
+                <ul class="ctg-links">
+                    <li><a href="#">e-Shop</a></li>
+                    <li><a href="#">Φιλοτελικά Προιόντα</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-circle-right"></i></a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="ctg-header" id="news">
+                    <h3>Ενημέρωση</h3>
+                    <i class="far fa-newspaper"></i>
+                </div>
+                <ul class="ctg-links">
+                    <li><a href="#">Δελτία Τύπου</a></li>
+                    <li><a href="#">Τελευταία Νέα</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-circle-right"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="social">
+        <div id="scl">
+            <h4>Join us on:</h4>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </div>
+        <div id="apps">
+            <h4>Mobile apps:</h4>
+            <i class="fab fa-google-play"></i>
+            <i class="fab fa-app-store-ios"></i>
+        </div>
+    </section>
+    <div class="categories" id="footer">
+        <ul>
+            <li>
+                <img src="images/logo_covid_shield.png" />
+            </li>
+            <li>
+                <a href="#">Συχνές Ερωτήσεις</a>
+                <a href="#">Σύνδεσμοι</a>
+            </li>
+            <li>
+                <a href="#">Πολιτική Ασφάλειας Πληροφοριών</a>
+                <a href="#">Ενημέρωση Επεξεργασίας</a>
+                <a href="#">Δεδομένων Βιντεοεπιτήρησης</a>
+            </li>
+            <li>
+                <a href="#">Όροι Χρήσης</a>
+                <a href="#">Προσωπικά Δεδομένα</a>
+            </li>
+            <li>
+                <a href="#">Επικοινωνία</a>
+                <a href="#">Site Map</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
