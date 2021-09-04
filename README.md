@@ -1,7 +1,12 @@
-# QuickBrainstormingDrafts
+# Drafts
 
 ## Description
-Quick rough random brainstorming draft ideas. When/if these drafts become complited will be published in a different repo.
+Quick random brainstorming draft ideas just to play around with plain html/css/js.
 
-## License 
-Anyone can fork this repo and PR changes. Feel free to develop these projects further.
+## Previews
+![Sneakers Store](previews/sneakersstore.gif)
+![Hotel Website](previews/hotel.gif)
+![Fashion One Page Shop](previews/onepage.gif)
+![MSN Rebuild](previews/msn.gif)
+![Fixed Background Dot](previews/fixedbackgrounddot.gif)
+![Handy Desserts](previews/handy.png)
